@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Bath.File.Chamavia.Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Bath.File.Chamavia.Testing", "R5T.Bath.File.Chamavia.Testing\R5T.Bath.File.Chamavia.Testing.csproj", "{0046DC99-6190-41DE-A749-0585597E796F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{6EC83D4A-9B93-44DE-97CE-83BD6D01057C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.T0064", "..\..\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj", "{3F30635E-7E95-462D-B356-D9DDAB9C4172}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +62,20 @@ Global
 		{0046DC99-6190-41DE-A749-0585597E796F}.Release|x64.Build.0 = Release|Any CPU
 		{0046DC99-6190-41DE-A749-0585597E796F}.Release|x86.ActiveCfg = Release|Any CPU
 		{0046DC99-6190-41DE-A749-0585597E796F}.Release|x86.Build.0 = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|x64.Build.0 = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|x64.Build.0 = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F30635E-7E95-462D-B356-D9DDAB9C4172} = {6EC83D4A-9B93-44DE-97CE-83BD6D01057C}
 	EndGlobalSection
 EndGlobal

@@ -1,13 +1,16 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Configuration;
 
 using R5T.Bath.File.Default;
 
+using R5T.T0064;
+
 
 namespace R5T.Bath.File.Chamavia
 {
-    public class DirectConfigurationBasedHumanOutputFileNameProvider : IHumanOutputFileNameProvider
+    [ServiceImplementationMarker]
+    public class DirectConfigurationBasedHumanOutputFileNameProvider : IHumanOutputFileNameProvider, IServiceImplementation
     {
         public const string ConfigurationKey = "HumanOutputFileName";
 
@@ -15,7 +18,8 @@ namespace R5T.Bath.File.Chamavia
         private IConfiguration Configuration { get; }
 
 
-        public DirectConfigurationBasedHumanOutputFileNameProvider(IConfiguration configuration)
+        public DirectConfigurationBasedHumanOutputFileNameProvider(
+            IConfiguration configuration)
         {
             this.Configuration = configuration;
         }

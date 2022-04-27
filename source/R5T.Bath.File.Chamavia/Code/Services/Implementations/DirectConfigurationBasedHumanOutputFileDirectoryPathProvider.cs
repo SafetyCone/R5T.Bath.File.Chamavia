@@ -1,14 +1,17 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Configuration;
 
 using R5T.Bath.File.Default;
 using R5T.Lombardy;
 
+using R5T.T0064;
+
 
 namespace R5T.Bath.File.Chamavia
 {
-    public class DirectConfigurationBasedHumanOutputFileDirectoryPathProvider : IHumanOutputFileDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class DirectConfigurationBasedHumanOutputFileDirectoryPathProvider : IHumanOutputFileDirectoryPathProvider, IServiceImplementation
     {
         public const string ConfigurationKey = "HumanOutputFileDirectoryPath";
 
@@ -17,7 +20,9 @@ namespace R5T.Bath.File.Chamavia
         private IStringlyTypedPathOperator StringlyTypedPathOperator { get; }
 
 
-        public DirectConfigurationBasedHumanOutputFileDirectoryPathProvider(IConfiguration configuration, IStringlyTypedPathOperator stringlyTypedPathOperator)
+        public DirectConfigurationBasedHumanOutputFileDirectoryPathProvider(
+            IConfiguration configuration,
+            IStringlyTypedPathOperator stringlyTypedPathOperator)
         {
             this.Configuration = configuration;
             this.StringlyTypedPathOperator = stringlyTypedPathOperator;
